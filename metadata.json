@@ -1,0 +1,6 @@
+{
+  "name": "ImmoDakar",
+  "description": "Portail d'ImmoDakar - Agence Immobilière et Services BTP à Dakar, Sénégal",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

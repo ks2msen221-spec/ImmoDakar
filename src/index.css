@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Palette de couleurs de prestige ImmoDakar */
+  --color-immo-primary: #2d6a3f;
+  --color-immo-primary-light: #3d8b52;
+  --color-immo-primary-pale: #5aad6a;
+  --color-immo-primary-faint: rgba(45,106,63,0.08);
+  --color-immo-accent: #2d6a3f;
+  --color-immo-text-dark: #0f1f14;
+  --color-immo-text-body: #374840;
+  --color-immo-text-muted: #6b8070;
+  --color-immo-bg-light: #f4f8f5;
+  --color-immo-border: rgba(45,106,63,0.15);
+
+  /* Mapping des fallbacks existants pour une transition parfaite sans regressions */
+  --color-immo-secondary: #3d8b52;
+  --color-immo-light: #f4f8f5;
+  --color-immo-dark: #0f1f14;
+  --color-immo-success: #2d6a3f;
+  --color-immo-error: #E74C3C;
+}
+
+/* Custom Geometric Balance design utilities */
+.geometric-shadow {
+  box-shadow: 0 20px 40px rgba(45, 106, 63, 0.06), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.geometric-card {
+  border-radius: 16px;
+  border: 1px solid rgba(45, 106, 63, 0.15);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.geometric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(45, 106, 63, 0.08);
+  border-color: rgba(61, 139, 82, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f8f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(45, 106, 63, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(45, 106, 63, 0.4);
+}
+
+/* Nice animations helper */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ─── Contact Form Component Styles ─────────────────────────────────────── */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374840;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 14px;
+  border: 1px solid rgba(45, 106, 63, 0.20);
+  border-radius: 8px;
+  font-size: 14px;
+  color: #0f1f14;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2d6a3f;
+}
+
+.form-group input:disabled,
+.form-group select:disabled,
+.form-group textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-submit {
+  background: #2d6a3f;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 13px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: inherit;
+  align-self: flex-start;
+}
+
+.form-submit:hover { background: #3d8b52; }
+.form-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.form-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.form-note {
+  font-size: 12px;
+  color: #6b8070;
+  margin: 0;
+}
+
+.contact-success {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.success-icon {
+  width: 52px;
+  height: 52px;
+  background: #2d6a3f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin: 0 auto 16px;
+}
+
+.contact-success h3 {
+  color: #0f1f14;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.contact-success p {
+  color: #6b8070;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .form-row { grid-template-columns: 1fr; }
+  .form-submit { width: 100%; text-align: center; }
+}
+
