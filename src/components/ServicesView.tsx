@@ -54,11 +54,7 @@ export const ServicesView: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
-            <div>
-              <span className="text-[10px] text-gray-400 block font-mono">Tarif</span>
-              <strong className="text-sm text-immo-primary">1 mois de loyer (par locataire)</strong>
-            </div>
+          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-end items-center">
             <a href="https://wa.me/221786606545" target="_blank" rel="noopener noreferrer" className="p-2 bg-immo-primary hover:bg-[#1a3f25] text-white rounded-xl transition-all"><ArrowRight size={16} /></a>
           </div>
         </div>
@@ -91,11 +87,7 @@ export const ServicesView: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
-            <div>
-              <span className="text-[10px] text-gray-400 block font-mono">Tarif</span>
-              <strong className="text-sm text-immo-primary">5% du loyer mensuel</strong>
-            </div>
+          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-end items-center">
             <a href="https://wa.me/221786606545" target="_blank" rel="noopener noreferrer" className="p-2 bg-immo-primary hover:bg-[#1a3f25] text-white rounded-xl transition-all"><ArrowRight size={16} /></a>
           </div>
         </div>
@@ -128,11 +120,7 @@ export const ServicesView: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
-            <div>
-              <span className="text-[10px] text-gray-400 block font-mono">Tarif</span>
-              <strong className="text-sm text-immo-primary">5% (loué) ou forfait adapté (vide)</strong>
-            </div>
+          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-end items-center">
             <a href="https://wa.me/221786606545" target="_blank" rel="noopener noreferrer" className="p-2 bg-immo-primary hover:bg-[#1a3f25] text-white rounded-xl transition-all"><ArrowRight size={16} /></a>
           </div>
         </div>
@@ -152,7 +140,7 @@ export const ServicesView: React.FC = () => {
                 <strong className="text-slate-700">Le problème :</strong> Fausses annonces, biens déjà loués, intermédiaires douteux — des semaines perdues pour rien, et le risque de l'arnaque.
               </div>
               <div className="border-t border-gray-100 pt-2">
-                <span className="font-bold text-slate-750 block text-[11px] mb-1">Standard (Gratuit pour le locataire à Dakar) :</span>
+                <span className="font-bold text-slate-750 block text-[11px] mb-1">Standard — Locataires à Dakar :</span>
                 <p className="text-[11px] text-gray-500">Biens réels, visites accompagnées, bail officiel.</p>
               </div>
               <div className="border-t border-gray-100 pt-2">
@@ -161,11 +149,7 @@ export const ServicesView: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
-            <div>
-              <span className="text-[10px] text-gray-400 block font-mono">Tarif</span>
-              <strong className="text-xs text-immo-primary">Standard : Gratuit | Premium : 50k-100k FCFA</strong>
-            </div>
+          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-end items-center">
             <a href="https://wa.me/221786606545" target="_blank" rel="noopener noreferrer" className="p-2 bg-immo-primary hover:bg-[#1a3f25] text-white rounded-xl transition-all"><ArrowRight size={16} /></a>
           </div>
         </div>
@@ -198,11 +182,7 @@ export const ServicesView: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
-            <div>
-              <span className="text-[10px] text-gray-400 block font-mono">Tarif</span>
-              <strong className="text-sm text-immo-primary">Inclus (Sérénité/Toppatóo) ou devis</strong>
-            </div>
+          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-end items-center">
             <a href="https://wa.me/221786606545" target="_blank" rel="noopener noreferrer" className="p-2 bg-immo-primary hover:bg-[#1a3f25] text-white rounded-xl transition-all"><ArrowRight size={16} /></a>
           </div>
         </div>
@@ -235,11 +215,7 @@ export const ServicesView: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
-            <div>
-              <span className="text-[10px] text-gray-400 block font-mono">Tarif</span>
-              <strong className="text-sm text-immo-primary">15% du montant des travaux</strong>
-            </div>
+          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-end items-center">
             <a href="https://wa.me/221786606545" target="_blank" rel="noopener noreferrer" className="p-2 bg-immo-primary hover:bg-[#1a3f25] text-white rounded-xl transition-all"><ArrowRight size={16} /></a>
           </div>
         </div>
@@ -272,11 +248,7 @@ export const ServicesView: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
-            <div>
-              <span className="text-[10px] text-gray-400 block font-mono">Tarif</span>
-              <strong className="text-sm text-immo-primary">3% du prix de vente</strong>
-            </div>
+          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-end items-center">
             <a href="https://wa.me/221786606545" target="_blank" rel="noopener noreferrer" className="p-2 bg-immo-primary hover:bg-[#1a3f25] text-white rounded-xl transition-all"><ArrowRight size={16} /></a>
           </div>
         </div>
@@ -309,11 +281,7 @@ export const ServicesView: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
-            <div>
-              <span className="text-[10px] text-gray-400 block font-mono">Tarif</span>
-              <strong className="text-sm text-immo-primary">2 à 3% du prix d'achat</strong>
-            </div>
+          <div className="mt-6 pt-4 border-t border-gray-100 flex justify-end items-center">
             <a href="https://wa.me/221786606545" target="_blank" rel="noopener noreferrer" className="p-2 bg-immo-primary hover:bg-[#1a3f25] text-white rounded-xl transition-all"><ArrowRight size={16} /></a>
           </div>
         </div>

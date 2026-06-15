@@ -29,51 +29,6 @@ export const AProposView: React.FC = () => {
     }
   ];
 
-  const grillesTarifaires = [
-    {
-      title: "Mise en Location",
-      commission: "1 mois de loyer",
-      charge: "Payé par le locataire",
-      desc: "Recherche de locataires sérieux, vérification approfondie des dossiers de solvabilité et rédaction des baux officiels."
-    },
-    {
-      title: "Gestion Locative Mensuelle",
-      commission: "5% du loyer",
-      charge: "Honoraires de gestion",
-      desc: "Encaissement, reversement sous 48h, gestion des réparations et rapport mensuel détaillé — vous savez toujours où en est votre argent."
-    },
-    {
-      title: "Location Saisonnière meublée",
-      commission: "15% à 20% des recettes",
-      charge: "Selon les prestations",
-      desc: "Conciergerie complète, gestion opérationnelle des entrées/sorties, ménage professionnel et optimisation des calendriers."
-    },
-    {
-      title: "Service Diaspora (Gestion à distance)",
-      commission: "Rapport mensuel inclus",
-      charge: "Inclus dans la gestion",
-      desc: "Pour les propriétaires en Europe, Amérique ou Afrique. Preuve visuelle mensuelle, loyer reversé, dossier géré en votre absence."
-    },
-    {
-      title: "Coordination de Chantier BTP",
-      commission: "15% du montant des travaux",
-      charge: "Sur factures vérifiées",
-      desc: "Suivi des étapes de construction, validation des fournitures de ciment sain et respect strict des délais."
-    },
-    {
-      title: "Fourniture de Matériaux BTP",
-      commission: "Marge transparente de 15% à 25%",
-      charge: "Intégrée dans les devis",
-      desc: "Achat négocié de ciment résistant au sel, fer à béton de qualité et finitions extérieures protectrices."
-    },
-    {
-      title: "Supervision Chantier Diaspora",
-      commission: "75 000 à 150 000 FCFA / mois",
-      charge: "Abonnement forfaitaire",
-      desc: "Visites hebdomadaires, rapport photo et vidéo daté à chaque étape, validation avant tout déblocage de fonds."
-    }
-  ];
-
   return (
     <div className="animate-fade-in py-10 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="a-propos-page">
       
@@ -156,35 +111,6 @@ export const AProposView: React.FC = () => {
           <p className="text-sm text-gray-500 leading-relaxed font-sans">
             Une part importante de notre activité est dédiée à la diaspora sénégalaise. Nous savons ce que ça représente d'avoir un bien au pays quand on vit loin — et ce que coûte de ne pas pouvoir intervenir. Nous mettons tout en œuvre pour que vous gardiez le contrôle, où que vous soyez.
           </p>
-        </div>
-      </section>
-
-      {/* Transparent Commissions Section */}
-      <section className="bg-white border border-immo-border rounded-3xl p-6 sm:p-10 mb-16" id="brand-identity-ecosystem">
-        <div className="mb-10 text-center">
-          <span className="text-xs font-bold text-immo-primary uppercase tracking-widest block mb-2 font-mono">Transparence de Gestion</span>
-          <h2 className="text-2xl sm:text-3xl font-extrabold font-serif text-immo-text-dark font-serif">Grille de Tarifs &amp; Prestations</h2>
-          <div className="w-12 h-1 bg-immo-primary mx-auto mt-3" />
-          <p className="text-xs text-gray-400 font-sans max-w-xl mx-auto mt-4 font-sans">
-            Tarifs lisibles, fixes et justifiés. Aucun frais caché. Vous savez exactement ce que vous payez avant de signer.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-sans">
-          {grillesTarifaires.map((item, idx) => (
-            <div key={idx} className="bg-neutral-50 hover:bg-neutral-100/50 p-6 rounded-2xl border border-gray-100 flex flex-col justify-between transition-all">
-              <div>
-                <h3 className="text-sm font-bold font-serif text-immo-text-dark mb-1 font-serif">{item.title}</h3>
-                <div className="my-2 p-2 bg-[#f4f8f5] rounded-lg border border-immo-border/40 inline-block font-sans">
-                  <span className="text-xs font-bold text-immo-primary font-mono">{item.commission}</span>
-                  <p className="text-[9px] text-[#556b2f] font-sans font-medium uppercase tracking-wider mt-0.5">{item.charge}</p>
-                </div>
-                <p className="text-xs text-gray-500 leading-relaxed font-sans mt-2">
-                  {item.desc}
-                </p>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
